@@ -1,0 +1,24 @@
+$font:'Krona One', sans-serif;
+$element-color: rgb(39, 42, 43);
+html{
+    background: rgb(55,56,106);
+    background: linear-gradient(0deg, rgba(55,56,106,1) 0%, rgba(34,193,195,1) 100%);
+}
+
+.Header{
+    font-size: 2vh;
+    height: 50px;
+    background-color: $element-color;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-family: $font;
+    position: sticky;
+    top: 0;
+    //box-shadow: 0px 20px 84px -6px rgba(0, 0, 0, 0.75);
+}
+.header-navigation{
+    margin: auto;
+    font-size: 15px;
+    cursor: pointer;
+}
