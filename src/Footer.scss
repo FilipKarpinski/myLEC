@@ -1,0 +1,14 @@
+$font: "Krona One", sans-serif;
+$element-color: rgb(39, 42, 43);
+
+.footer {
+    background-color: $element-color;
+    color: white;
+    font-size: 15px;
+    font-family: $font;
+    margin-top: 100px;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    padding-top: 20px;
+  }

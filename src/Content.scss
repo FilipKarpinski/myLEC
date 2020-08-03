@@ -1,0 +1,78 @@
+$font: "Krona One", sans-serif;
+$element-color: rgb(39, 42, 43);
+
+.content {
+  align-items: center;
+  margin: 60px;
+}
+
+.logoAndStudio {
+    height:600px;
+  position: relative;
+  display: block;
+  text-align: center;
+  .img, .permaImg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 500px;
+    height: 550px;
+    width: 1200px;
+    border-radius: 10px;
+  }
+    .img{
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+    &:nth-of-type(1) {
+        animation-delay: 12s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 8s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 4s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: 0;
+      }
+  }
+  .logo {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 500px;
+    z-index: 1;
+    -webkit-filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white)
+      drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
+  
+    filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white)
+      drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
+  }
+}
+
+@keyframes multiple-image-crossfade {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
