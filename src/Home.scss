@@ -120,12 +120,10 @@ $element-color: rgb(39, 42, 43);
     }
 
   .teamTile:hover{
-    &:nth-child(odd){
     background-color: rgb(39, 42, 43);
-    }
-    &:nth-child(even){
+  }
+  .even:hover{
       background-color: rgba(255, 255, 255, 0.466);
-    }
   }
   .teamTile:hover p{
     opacity: 1;

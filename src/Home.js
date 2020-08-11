@@ -39,31 +39,31 @@ class Home extends React.Component {
         <TeamTile name='FNC' src={FNC} fullname='Fnatic' fullname2=''/>
         </Link>
         <Link to='/G2'>
-        <TeamTile name='G2' src={G2} fullname='G2' fullname2='Esports'/>
+        <TeamTile name='G2' src={G2} fullname='G2' fullname2='Esports' even='even'/>
         </Link>
         <Link to='/XL'>
         <TeamTile name='XL' src={XL} fullname='Excel' fullname2='Esports'/>
         </Link>
         <Link to='/SK'>
-        <TeamTile name='SK' src={SK} fullname='SK' fullname2='Gaming'/>
+        <TeamTile name='SK' src={SK} fullname='SK' fullname2='Gaming' even='even'/>
         </Link>
         <Link to='/S04'>
         <TeamTile name='S04' src={S04} fullname='Schalke' fullname2='04'/>
         </Link>
         <Link to='/OG'>
-        <TeamTile name='OG' src={OG} fullname='Origen' fullname2=''/>
+        <TeamTile name='OG' src={OG} fullname='Origen' fullname2='' even='even'/>
         </Link>
         <Link to='/VIT'>
         <TeamTile name='VIT' src={VIT} fullname='Team' fullname2='Vitality'/>
         </Link>
         <Link to='/MSF'>
-        <TeamTile name='MSF' src={MSF} fullname='Misfits' fullname2='Gaming'/>
+        <TeamTile name='MSF' src={MSF} fullname='Misfits' fullname2='Gaming' even='even'/>
         </Link>
         <Link to='/MAD'>
         <TeamTile name='MAD' src={MAD} fullname='Mad' fullname2='Lions'/>
         </Link>
         <Link to='/RGE'>
-        <TeamTile name='RGE' src={RGE} fullname='Rogue' fullname2=''/>
+        <TeamTile name='RGE' src={RGE} fullname='Rogue' fullname2='' even='even'/>
         </Link>
         </div>
       </div>

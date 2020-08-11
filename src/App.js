@@ -13,7 +13,8 @@ import Schedule from './Schedule'
 import Standings from './Standings'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import TeamPage from './TeamPage';
-import TeamTiles from './TeamTiles';
+import TeamTiles from './TeamTilesRouter';
+import TeamTilesRouter from './TeamTilesRouter';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       <Route path='/' exact component={Home} />
       <Route path='/schedule' exact component={Schedule} />
       <Route path='/standings' exact component={Standings} />
-      <TeamTiles/>
+      <TeamTilesRouter/>
       </Switch>
       <Footer/>
     </div>
