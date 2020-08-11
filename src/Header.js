@@ -1,15 +1,23 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 
 class Header extends React.Component{
 render(){
     return(
         <div className='Header'>
-            <p className='title'>LEC</p>
+            <NavLink to='/' >
+            <p className='title' >LEC</p>
+            </NavLink>
             <nav>
-                <a href="" className='nav-link'>Home</a>
-                <a href="" className='nav-link'>Schedule</a>
-                <a href="" className='nav-link'>Standings</a>
-
+                <NavLink to='/' exact className='nav-link'  activeClassName='active-tab'>
+                    <p>Home</p>
+                </NavLink>
+                <NavLink to='/Schedule' exact className='nav-link' activeClassName='active-tab'>
+                <p>Schedule</p>
+                </NavLink>
+                <NavLink to='/Standings' exact className='nav-link' activeClassName='active-tab'>
+                <p>Standings</p>
+                </NavLink>
             </nav>
         </div>
     )

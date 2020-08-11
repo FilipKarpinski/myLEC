@@ -12,7 +12,7 @@ $element-color: rgb(39, 42, 43);
     position: fixed;
     top: 0;
     z-index: 10;
-    box-shadow: 0px 20px 84px -6px rgba(0, 0, 0, 0.75);
+    border-bottom: solid white;;
     .title {
       margin: 0;
       margin-left: 100px;
@@ -21,12 +21,15 @@ $element-color: rgb(39, 42, 43);
     }
     nav {
       display: flex;
+      justify-content: space-evenly;
+      align-items: center;
     }
     .nav-link {
-      margin: auto;
-      margin-left: 30px;
+      margin: 15px;
       font-size: 15px;
       color: white;
-      text-decoration: none;
+    }
+    .active-tab{
+      border-bottom: 5px solid white;
     }
   }

@@ -76,3 +76,58 @@ $element-color: rgb(39, 42, 43);
       opacity:1;
     }
   }
+
+  .teamTiles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1100px;
+    margin: auto;
+  }
+  .teamTile{
+    transition: background-color 500ms ease-out;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .teamTile>img{
+    margin: 0;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 10px;
+    left: 10px;
+    }
+    .teamTile>p{
+      margin: 0;
+      padding: 0;
+      font-family: $font;
+      color: white;
+      font-size: 10px;
+      -webkit-text-stroke: 1px black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: font-size  0.7s, 
+      opacity 0.7s ease-in;
+      transition-delay: 100ms;
+    }
+
+  .teamTile:hover{
+    &:nth-child(odd){
+    background-color: rgb(39, 42, 43);
+    }
+    &:nth-child(even){
+      background-color: rgba(255, 255, 255, 0.466);
+    }
+  }
+  .teamTile:hover p{
+    opacity: 1;
+    font-size: 35px;
+  }
