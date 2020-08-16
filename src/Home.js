@@ -16,7 +16,6 @@ import RGE from "./img/RGE.png";
 import SK from "./img/SK.png";
 import VIT from "./img/VIT.png";
 import TeamTile from "./TeamTile";
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Link} from 'react-router-dom'
 
 class Home extends React.Component {
@@ -26,7 +25,7 @@ class Home extends React.Component {
       <div className="content">
         <div className="logoAndStudio">
           <img src={logo} alt="LEC" className="logo" />
-          <div studioImages>
+          <div classname='studioImages'>
             <img src={studio1} alt="studio" className="permaImg" />
             <img src={studio2} alt="studio" className="img" />
             <img src={studio3} alt="studio" className="img" />

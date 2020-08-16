@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import './Header.scss';
 import './Home.scss';
 import './Footer.scss';
 import './Schedule.scss';
 import './Standings.scss';
+import './TeamPage.scss'
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
 import Schedule from './Schedule'
 import Standings from './Standings'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import TeamPage from './TeamPage';
-import TeamTiles from './TeamTilesRouter';
 import TeamTilesRouter from './TeamTilesRouter';
+import ScrollToTop from './ScrollToTop';
+import $ from 'jquery'
 
 
 function App() {
+  $(document).mouseup(function (e) { 
+    if ($(e.target).closest(".nav-container").length 
+                === 0 &&$(window).width()<=1000) { 
+        $(".nav-container").hide(); 
+    } 
+});
   return (
     <Router>
+      <ScrollToTop/>
     <div>
       <Header/>
       <Switch>

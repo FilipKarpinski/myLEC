@@ -15,7 +15,7 @@ $element-color: rgb(39, 42, 43);
     border-bottom: solid white;;
     .title {
       margin: 0;
-      margin-left: 100px;
+      margin-left: 50px;
       letter-spacing: 4px;
       font-size: 40px;
     }
@@ -24,12 +24,57 @@ $element-color: rgb(39, 42, 43);
       justify-content: space-evenly;
       align-items: center;
     }
+    .nav-container{
+      display: flex;
+    }
     .nav-link {
       margin: 15px;
       font-size: 15px;
       color: white;
     }
+    a{
+      text-decoration: none;
+      color: white;
+    }
     .active-tab{
       border-bottom: 5px solid white;
     }
+    .burger{
+      display: none;
+      margin: 50px;
+      cursor: pointer;
+      div{
+        background-color: white;
+        height: 4px;
+        width: 26px;
+        margin: 4px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+      }
+    }
   }
+  @media all and (max-width:1000px){
+    .Header{
+      justify-content: space-between;
+    .nav-container{
+      position: absolute;
+      right: 0;
+      top: 50px;
+      height: 260px;
+      width: 260px;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: $element-color;
+      text-align: center;
+      border-bottom: solid white;
+      border-left: solid white;
+
+      display: none;
+    }
+    .burger{
+      display: block;
+      z-index: 1;
+    }
+  }
+}

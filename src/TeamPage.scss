@@ -1,0 +1,33 @@
+.teamPage{
+    p{
+        font-size: 100px;
+        font-family: "Krona One", sans-serif;
+        color: white;
+    }
+    img{
+        height: auto;
+    }
+    .content{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 90px;
+        a{
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+        font-size: 30px;
+        transition:color 0.25s ease-in;
+        font-family: "Krona One", sans-serif;
+        }
+        a:hover{
+            color: rgb(39, 42, 43);
+        }
+    }
+}

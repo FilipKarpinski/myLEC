@@ -5,8 +5,8 @@ class Standings extends React.Component{
     }
 render(){
     return(
-        <div>
-            <p>Standings</p>
+        <div className='standings'>
+            <p>No free api to use :(</p>
         </div>
     )
 }
