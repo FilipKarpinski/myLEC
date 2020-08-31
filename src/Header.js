@@ -5,22 +5,30 @@ import $ from 'jquery'
 class Header extends React.Component{
     componentDidMount(){
         $('.burger').click(()=>{
-            $('.nav-container').toggle()
+            $('.links-container').toggle()
         })
-        $('p').click(()=>{
+        $('.nav-link').click(()=>{
             if($(window).width()<=1000)
-            $('.nav-container').hide()
+            $('.links-container').hide()
+        })
+        $(window).resize(()=>{
+            if($(window).width()>1000){
+            $('.links-container').show()
+            $('.links-container').css('display','flex')
+            }
+            else
+            $('.links-container').hide()
         })
     }
 render(){
 
     return(
         <div className='Header'>
-            <NavLink to='/' >
-            <p className='title' >LEC</p>
+            <NavLink to='/'  className='title' >
+            <p>LEC</p>
             </NavLink>
             <nav>
-                <div className='nav-container'>
+                <div className='links-container'>
                 <NavLink to='/' exact className='nav-link'  activeClassName='active-tab'>
                     <p>Home</p>
                 </NavLink>
@@ -31,12 +39,12 @@ render(){
                 <p>Standings</p>
                 </NavLink>
                 </div>
-                <div className='burger'>
+            </nav>
+            <div className='burger' id='burger'>
                     <div className='line'></div>
                     <div className='line'></div>
                     <div className='line'></div>
                 </div>
-            </nav>
         </div>
     )
 }

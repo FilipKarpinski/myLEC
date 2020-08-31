@@ -18,10 +18,10 @@ import $ from 'jquery'
 
 
 function App() {
-  $(document).mouseup(function (e) { 
-    if ($(e.target).closest(".nav-container").length 
-                === 0 &&$(window).width()<=1000) { 
-        $(".nav-container").hide(); 
+  $(document).click(function (e) { 
+    if ($(e.target).closest(".links-container").length === 0 && $(window).width()<=1000 && !($(e.target).hasClass('burger')||$(e.target).hasClass('line'))) { 
+
+        $(".links-container").hide(); 
     } 
 });
   return (
